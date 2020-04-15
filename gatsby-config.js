@@ -1,10 +1,38 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Bushwhacker Bend Winery`,
+    description: `Bushwhacker Bend Winery is a unique, local venue situated on the bank of the Missouri River in delightful Glasgow, Missouri.`,
+    author: `Aleksandar Trujic`,
+    menuLinks: [
+      {
+        id: 1,
+        title: "Home",
+        to: "/",
+      },
+      {
+        id: 2,
+        title: "Wines",
+        to: "/wines",
+      },
+      {
+        id: 3,
+        title: "Gallery",
+        to: "/gallery",
+      },
+      {
+        id: 4,
+        title: "Blog",
+        to: "/blog",
+      },
+      {
+        id: 5,
+        title: "Contact",
+        to: "/contact",
+      },
+    ],
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,4 +59,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
