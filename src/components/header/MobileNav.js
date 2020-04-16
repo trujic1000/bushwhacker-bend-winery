@@ -20,9 +20,9 @@ export default MobileNavbar;
 
 const MobileNav = styled.nav`
   position: absolute;
-  top: 10vh;
+  top: 0;
   left: 0;
-  height: 90vh;
+  height: 100%;
   width: 100%;
   background: ${props => props.theme.colors.bg};
   display: flex;

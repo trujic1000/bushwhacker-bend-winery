@@ -30,11 +30,12 @@ export const GlobalStyle = createGlobalStyle`
   p {
     font-family: "Oxanium", cursive;
   }
-	
+	.active {
+		border-bottom: 2px solid white;
+	}
 	.text-medium {
     font-size: calc(1rem + 1vw);
   }
-
   .text-large {
     font-size: calc(1rem + 1.6vw);
   }

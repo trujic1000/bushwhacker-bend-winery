@@ -21,7 +21,12 @@ const NavLinks = ({ setOpen }) => {
     <ul className="nav-links">
       {site.siteMetadata.menuLinks.map(link => (
         <li key={link.id}>
-          <Link to={link.to} className="link" onClick={closeNav}>
+          <Link
+            to={link.to}
+            className="link"
+            activeClassName="active"
+            onClick={closeNav}
+          >
             {link.title}
           </Link>
         </li>

@@ -2,6 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import styled from "styled-components";
 import BackgroundImage from "gatsby-background-image";
+import Button from "../button";
 
 const BackgroundSection = ({ className }) => {
   const { desktop } = useStaticQuery(graphql`
@@ -20,6 +21,9 @@ const BackgroundSection = ({ className }) => {
     <BackgroundImage Tag="section" className={className} fluid={imageData}>
       <span className="text-medium">Welcome to</span>
       <span className="text-large">Bushwhacker Bend Winery</span>
+      <Button to="#" className="cta">
+        Explore our Wines
+      </Button>
     </BackgroundImage>
   );
 };
@@ -42,6 +46,13 @@ const StyledBackgroundSection = styled(BackgroundSection)`
 
   span {
     line-height: 1.2;
+  }
+
+  a.cta {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
   }
 `;
 
