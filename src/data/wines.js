@@ -1,4 +1,3 @@
-import redWine from "../images/red-wine.png";
 import whiteWine from "../images/white-wine.png";
 
 const wines = [

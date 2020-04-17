@@ -32,7 +32,6 @@ const IndexPage = () => (
         View all wines
       </Link>
     </StyledSection>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 );
 
