@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import media from "styled-media-query";
 import { Squash as Hamburger } from "hamburger-react";
 import NavLinks from "./NavLinks";
@@ -23,7 +23,7 @@ DesktopNavbar.propTypes = {
 export default DesktopNavbar;
 
 const DesktopNav = styled.nav`
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 99;
@@ -31,18 +31,15 @@ const DesktopNav = styled.nav`
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-
-  /* background: ${props => props.theme.colors.bg}; */
-  /* box-shadow: 0 0 2px #000; */
   color: white;
-
   height: 10vh;
   padding: 0 120px;
+  transition: all 150ms linear;
 
   ${media.lessThan("large")`
     padding: 0 60px;
     `}
-    
+
   ${media.lessThan("medium")`
     padding: 0 30px;
     `}

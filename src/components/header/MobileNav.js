@@ -30,6 +30,7 @@ const MobileNav = styled.nav`
   align-items: center;
   transition: opacity 150ms ease;
   opacity: 0;
+  z-index: -1;
   ${props =>
     props.isOpen &&
     css`

@@ -2,28 +2,30 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import styled from "styled-components";
 import BackgroundImage from "gatsby-background-image";
-import Button from "../button";
+import { AnchorLink } from "../elements";
 
-const BackgroundSection = ({ className }) => {
-  const { desktop } = useStaticQuery(graphql`
-    query {
-      desktop: file(relativePath: { eq: "landing.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 1920) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+const BG_IMAGE_QUERY = graphql`
+  query bgImageQuery {
+    desktop: file(relativePath: { eq: "landing.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 1920) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-  `);
+  }
+`;
+
+const BackgroundSection = ({ className }) => {
+  const { desktop } = useStaticQuery(BG_IMAGE_QUERY);
   const imageData = desktop.childImageSharp.fluid;
   return (
     <BackgroundImage Tag="section" className={className} fluid={imageData}>
       <span className="text-medium">Welcome to</span>
       <span className="text-large">Bushwhacker Bend Winery</span>
-      <Button to="#" className="cta">
+      <AnchorLink to="/#featured-wines" className="cta">
         Explore our Wines
-      </Button>
+      </AnchorLink>
     </BackgroundImage>
   );
 };
