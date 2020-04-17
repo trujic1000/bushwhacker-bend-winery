@@ -9,10 +9,10 @@ import RobotoItalicWOFF from "../../static/fonts/roboto/Roboto-Italic.woff";
 import RobotoBoldWOFF2 from "../../static/fonts/roboto/Roboto-Bold.woff2";
 import RobotoBoldWOFF from "../../static/fonts/roboto/Roboto-Bold.woff";
 
-import OxaniumRegularWOFF2 from "../../static/fonts/oxanium/Oxanium-Regular.woff2";
-import OxaniumRegularWOFF from "../../static/fonts/oxanium/Oxanium-Regular.woff";
-import OxaniumBoldWOFF2 from "../../static/fonts/oxanium/Oxanium-Bold.woff2";
-import OxaniumBoldWOFF from "../../static/fonts/oxanium/Oxanium-Bold.woff";
+import OpenSansRegularWOFF2 from "../../static/fonts/open-sans/OpenSans-Regular.woff2";
+import OpenSansRegularWOFF from "../../static/fonts/open-sans/OpenSans-Regular.woff";
+import OpenSansBoldWOFF2 from "../../static/fonts/open-sans/OpenSans-Bold.woff2";
+import OpenSansBoldWOFF from "../../static/fonts/open-sans/OpenSans-Bold.woff";
 
 const FontFaces = css`
   /* ROBOTO */
@@ -48,20 +48,20 @@ const FontFaces = css`
     font-style: italic;
   }
 
-  /* OXANIUM */
+  /* OPEN SANS */
 
   @font-face {
-    font-family: "Oxanium";
-    src: url(${OxaniumRegularWOFF2}) format("woff2"),
-      url(${OxaniumRegularWOFF}) format("woff");
+    font-family: "Open Sans";
+    src: url(${OpenSansRegularWOFF2}) format("woff2"),
+      url(${OpenSansRegularWOFF}) format("woff");
     font-weight: 200;
     font-style: normal;
   }
 
   @font-face {
-    font-family: "Oxanium";
-    src: url(${OxaniumBoldWOFF2}) format("woff2"),
-      url(${OxaniumBoldWOFF}) format("woff");
+    font-family: "Open Sans";
+    src: url(${OpenSansBoldWOFF2}) format("woff2"),
+      url(${OpenSansBoldWOFF}) format("woff");
     font-weight: normal;
     font-style: normal;
   }

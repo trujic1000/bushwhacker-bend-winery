@@ -22,14 +22,14 @@ export const GlobalStyle = createGlobalStyle`
   body {
 		overflow-x: hidden;
 		line-height: 1.5;
-		font-family: "Roboto", sans-serif;
+		font-family: "Open Sans", sans-serif;
 	}
 	a {
 		text-decoration: none;
   }
-  p {
-    font-family: "Oxanium", cursive;
-  }
+	p {
+		font-family: "Roboto", sans-serif;
+	}
 	.active {
 		border-bottom: 2px solid white;
 	}

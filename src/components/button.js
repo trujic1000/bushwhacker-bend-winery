@@ -8,7 +8,7 @@ const Button = styled(Link)`
   background: transparent;
   border: 2px solid ${props => props.theme.colors.white};
   color: ${props => props.theme.colors.white};
-  font-family: "Oxanium", cursive;
+  font-family: "Open Sans", sans-serif;
   transition: all 150ms linear;
   &:hover {
     background: ${props => props.theme.colors.white};

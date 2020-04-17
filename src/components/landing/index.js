@@ -31,7 +31,6 @@ const BackgroundSection = ({ className }) => {
 const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100vw;
   height: 100vh;
-  font-family: "Oxanium", cursive;
 
   background-position: bottom center;
   background-repeat: repeat-y;
