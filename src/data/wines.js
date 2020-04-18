@@ -1,11 +1,13 @@
-import whiteWine from "../images/white-wine.png";
+import whiteWine from "../images/wine-1.png";
+import redWine from "../images/wine-2.png";
+import dryWhiteWine from "../images/wine-4.png";
 
 const wines = [
   {
     id: 1,
     title: "Norton",
     type: "Dry red",
-    image: whiteWine,
+    image: redWine,
     price: "$20.00",
     featured: true,
     description:
@@ -15,7 +17,7 @@ const wines = [
     id: 2,
     title: "Vidal Blanc",
     type: "Dry white",
-    image: whiteWine,
+    image: dryWhiteWine,
     price: "$13.00",
     featured: true,
     description: "A crisp dry wine with hints of apple flavors.",
@@ -53,7 +55,7 @@ const wines = [
     id: 6,
     title: "Grape Shot Red",
     type: "Sweet Red",
-    image: whiteWine,
+    image: redWine,
     price: "$11.00",
     featured: false,
     description:
@@ -63,7 +65,7 @@ const wines = [
     id: 7,
     title: "River Rat Rose'",
     type: "Sweet Red",
-    image: whiteWine,
+    image: redWine,
     price: "$11.00",
     featured: false,
     description:
@@ -73,7 +75,7 @@ const wines = [
     id: 8,
     title: "Glasgow Grand",
     type: "Sweet Red",
-    image: whiteWine,
+    image: redWine,
     price: "$13.00",
     featured: false,
     description:

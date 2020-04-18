@@ -57,7 +57,7 @@ const StyledSection = styled(Section)`
         opacity: 1;
       }
       img {
-        width: 80%;
+        width: 30%;
       }
       span {
         display: block;
