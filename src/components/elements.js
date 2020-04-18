@@ -17,7 +17,7 @@ export const Link = styled(GatsbyLink)`
     color: ${props => props.theme.colors.black};
   }
   ${props =>
-    props.dark &&
+    props.type === "dark" &&
     css`
       border-color: ${props.theme.colors.black};
       color: ${props.theme.colors.black};

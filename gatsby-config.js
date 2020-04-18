@@ -16,16 +16,21 @@ module.exports = {
       },
       {
         id: 3,
+        title: "About us",
+        to: "/about-us",
+      },
+      {
+        id: 4,
         title: "Gallery",
         to: "/gallery",
       },
       {
-        id: 4,
+        id: 5,
         title: "Blog",
         to: "/blog",
       },
       {
-        id: 5,
+        id: 6,
         title: "Contact",
         to: "/contact",
       },
