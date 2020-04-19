@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "components/layout";
 import SEO from "components/SEO";
-import { Landing, FeaturedWines, AboutUs } from "components/home";
+import { Landing, FeaturedWines, AboutUs, Gallery } from "components/home";
 
 const IndexPage = () => (
   <Layout>
@@ -9,6 +9,7 @@ const IndexPage = () => (
     <Landing />
     <FeaturedWines />
     <AboutUs />
+    <Gallery />
   </Layout>
 );
 
