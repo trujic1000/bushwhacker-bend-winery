@@ -44,12 +44,12 @@ export const AnchorLink = styled(Anchor)`
 `;
 
 export const Section = styled.section`
-  padding: 80px 120px;
+  padding: 80px 0;
   margin: auto;
   color: ${props => props.theme.colors.white};
 
   ${media.lessThan("medium")`
-    padding: 40px 80px;
+    padding: 40px 0;
   `}
 
   h1 {
@@ -57,12 +57,6 @@ export const Section = styled.section`
     font-size: calc(1rem + 1vw);
     color: ${props => props.theme.colors.white};
   }
-
-  ${props =>
-    props.fluid &&
-    css`
-      width: 100%;
-    `}
 
   ${props =>
     props.light &&

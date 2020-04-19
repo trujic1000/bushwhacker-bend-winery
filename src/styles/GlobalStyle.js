@@ -33,6 +33,9 @@ export const GlobalStyle = createGlobalStyle`
 	.active {
 		border-bottom: 2px solid white;
 	}
+	.text-small {
+		font-size: calc(1rem + 0.2vw);
+	}
 	.text-medium {
     font-size: calc(1rem + 1vw);
   }
