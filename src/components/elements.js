@@ -44,12 +44,12 @@ export const AnchorLink = styled(Anchor)`
 `;
 
 export const Section = styled.section`
-  padding: 80px 0;
+  padding: 100px 80px;
   margin: auto;
   color: ${props => props.theme.colors.white};
 
   ${media.lessThan("medium")`
-    padding: 40px 0;
+    padding: 80px 40px;
   `}
 
   h1 {
