@@ -2,13 +2,12 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import styled from "styled-components";
-import media from "styled-media-query";
 import { Section, Container, Link } from "components/elements";
 
 const GALLERY_QUERY = graphql`
   query galleryQuery {
     images: allImageSharp(
-      filter: { fluid: { originalName: { regex: "/gallery-/" } } }
+      filter: { fluid: { originalName: { regex: "/gallery-0/" } } }
       limit: 6
     ) {
       edges {
@@ -52,11 +51,6 @@ const GallerySection = styled(Section)`
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
 
-    .gallery-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
     a {
       text-align: center;
     }

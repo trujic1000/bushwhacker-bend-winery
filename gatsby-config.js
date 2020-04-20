@@ -25,11 +25,6 @@ module.exports = {
         to: "/gallery",
       },
       {
-        id: 5,
-        title: "Blog",
-        to: "/blog",
-      },
-      {
         id: 6,
         title: "Contact",
         to: "/contact",
