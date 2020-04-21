@@ -2,11 +2,10 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
 import BackgroundImage from "gatsby-background-image";
-import { Link } from "components/elements";
 
-const CONTACT_IMAGE_QUERY = graphql`
-  query contactImageQuery {
-    desktop: file(relativePath: { eq: "contact.jpg" }) {
+const ABOUT_US_IMAGE_QUERY = graphql`
+  query aboutUsHero {
+    desktop: file(relativePath: { eq: "gallery-7.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 1920) {
           ...GatsbyImageSharpFluid_withWebp
@@ -17,26 +16,23 @@ const CONTACT_IMAGE_QUERY = graphql`
 `;
 
 const Contact = ({ className }) => {
-  const { desktop } = useStaticQuery(CONTACT_IMAGE_QUERY);
+  const { desktop } = useStaticQuery(ABOUT_US_IMAGE_QUERY);
   const imageData = desktop.childImageSharp.fluid;
 
   return (
     <BackgroundImage className={className} fluid={imageData}>
-      <span className="text-medium">Visit our winery today</span>
-      <span className="text-medium">and let us share our story with you</span>
-      <Link to="/contact">Contact Us</Link>
+      <span className="text-medium">Our Wine Collection</span>
     </BackgroundImage>
   );
 };
 
 const ContactSection = styled(Contact)`
-  height: 400px;
+  height: 50vh;
   padding: 0 40px;
-  background-position: center center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
 
   display: flex;
@@ -44,10 +40,6 @@ const ContactSection = styled(Contact)`
   justify-content: center;
   align-items: center;
   text-align: center;
-
-  a {
-    margin-top: 30px;
-  }
 `;
 
 export default ContactSection;

@@ -30,7 +30,7 @@ const FeaturedWines = () => (
 
 export default FeaturedWines;
 
-const FeaturedWinesSection = styled(Section)`
+export const FeaturedWinesSection = styled(Section)`
   text-align: center;
   .featured-wines__wrap {
     margin: 60px auto;
