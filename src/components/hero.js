@@ -5,7 +5,7 @@ import BackgroundImage from "gatsby-background-image";
 
 const WINES_HERO_IMAGE_QUERY = graphql`
   query aboutUsHero {
-    desktop: file(relativePath: { eq: "gallery-7.jpg" }) {
+    desktop: file(relativePath: { eq: "hero.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 1920) {
           ...GatsbyImageSharpFluid_withWebp

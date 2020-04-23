@@ -27,7 +27,7 @@ const IMAGE_QUERY = graphql`
 const AboutUs = () => {
   const { imageOne, imageTwo } = useStaticQuery(IMAGE_QUERY);
   const imageOneData = imageOne.childImageSharp.fluid;
-  const imageTwoData = imageOne.childImageSharp.fluid;
+  const imageTwoData = imageTwo.childImageSharp.fluid;
   return (
     <>
       <AboutUsSection light>
@@ -65,7 +65,7 @@ const AboutUs = () => {
               splendor!
             </p>
           </div>
-          <Img fluid={imageOneData} alt="river-view-deck" />
+          <Img fluid={imageTwoData} alt="river-view-deck" />
         </Container>
       </AboutUsSection>
     </>
