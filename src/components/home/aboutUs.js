@@ -6,7 +6,7 @@ import media from "styled-media-query";
 import { Section, Container, Link } from "components/elements";
 
 const IMAGE_QUERY = graphql`
-  query imageQuery {
+  query aboutUsImageQuery {
     image: file(relativePath: { eq: "deck-view.png" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
