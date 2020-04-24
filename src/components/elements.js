@@ -68,6 +68,13 @@ export const Section = styled.section`
         color: ${props => props.theme.colors.black};
       }
     `}
+
+  ${props =>
+    props.fluid &&
+    css`
+      padding: 0;
+      max-width: 100%;
+    `}
 `;
 
 export const Container = styled.div`

@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "author": "Aleksandar Trujic <atrujic1000@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.20.12",
     "gatsby-background-image": "^1.1.1",
@@ -17,6 +20,7 @@
     "gatsby-plugin-styled-components": "^3.2.1",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-sharp": "^2.4.3",
+    "google-map-react": "^1.1.7",
     "hamburger-react": "^2.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

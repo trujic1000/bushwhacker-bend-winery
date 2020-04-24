@@ -27,7 +27,7 @@ const Hero = ({ className, title }) => {
 };
 
 const HeroSection = styled(Hero)`
-  height: 60vh;
+  height: 50vh;
   padding: 0 40px;
   background-position: bottom center;
   background-repeat: no-repeat;
